@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+body{
+
+    margin: 0;
+    background: #eeadad;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 255, 255);
+
+    cursor: grab;
+
+    background-image: url(https://www.papeiseparede.com.br/2033-thickbox_default/foto-mural-floresta-negra.jpg.webp);
+
+}
+
+h1{
+     text-align: center;
+     font-style: italic;
+     color: rgb(136, 156, 243);
+     
+}
+
+.container{
+
+    position: relative;
+    width: 320px;
+    margin: 100px auto 0 auto;
+    perspective: 1100px;
+}
+
+.carrossel{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 50s infinite forwards linear;
+}
+
+.imagem{
+
+    position: absolute;
+    width: 290px;
+    height: 187px;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px #00000066;
+    display: flex;
+
+    border-bottom-style: groove;
+    border-bottom-color:#889cf3;
+    border-top-style: groove;
+    border-top-color: #889cf3;
+
+    /* adicionei bordas em cima com border-top e bordas em baixo com border-bottom */
+    filter:drop-shadow(10%);
+    /* adicionei drop-shadow para melhor saturação da imagem*/
+    
+
+}
+
+.imagem span{
+
+    margin: auto;
+    font-size: 1em;
+    color: #b9c4f1;
+}
+
+@keyframes rotate360{
+
+    from{
+        transform: rotateY(0deg)
+        /*espaço entre as imagens*/
+    }
+    to {
+        transform: rotateY(-360deg)
+        /*rotação das imagens*/
+    }
+}
+
+.imagem:nth-child(1){
+
+    background-image: url(https://aventurasnahistoria.uol.com.br/media/_versions/bruxas_acusacoes_idade_media_widelg.jpeg);
+    transform: rotateY(0deg) translateZ(430px);
+}
+
+.imagem:nth-child(2){
+
+    background-image: url(https://aventurasnahistoria.uol.com.br/media/_versions/capa_fadas_origem_story_widelg.jpeg);
+    transform: rotateY(40deg) translateZ(430px);
+}
+
+.imagem:nth-child(3){
+
+    background-image: url(https://acrediteounao.com/wp-content/uploads/2017/01/curiosidades-sobre-vampiros.jpeg);
+    transform: rotateY(80deg) translateZ(430px);
+}
+
+.imagem:nth-child(4){
+
+    background-image: url(https://static.wixstatic.com/media/4d0333_b8272afb5af848149a9fed502912a926~mv2.jpg/v1/fit/w_620%2Ch_465%2Cal_c%2Cq_80/file.jpg);
+    transform: rotateY(120deg) translateZ(430px);
+}
+
+.imagem:nth-child(5){
+    background-image: url(https://image.shutterstock.com/mosaic_250/2407808/494488711/stock-photo-necromancy-sorcerer-casting-black-magic-spell-using-his-book-of-shadows-494488711.jpg);
+    transform: rotateY(160deg) translateZ(430px);
+}
+
+.imagem:nth-child(6){
+
+    background-image: url(https://i0.statig.com.br/bancodeimagens/6j/ng/w2/6jngw2cjd7ykhe9xkc1h5ao2w.jpg) ;
+    transform: rotateY(200deg) translateZ(430px);
+}
+
+.imagem:nth-child(7){
+
+    background-image: url(https://image.shutterstock.com/mosaic_250/748831/2247000295/stock-photo-colorful-garden-gnomes-with-black-sunglasses-at-a-place-in-the-forest-during-hiking-2247000295.jpg);
+    transform: rotateY(240deg) translateZ(430px);
+}
+
+.imagem:nth-child(8){
+
+    background-image: url(https://image.shutterstock.com/mosaic_250/1860665/1561409023/stock-photo-griffins-perch-on-pedestal-in-the-french-inspired-village-of-ba-na-hills-vietnam-1561409023.jpg);
+    transform: rotateY(280deg) translateZ(430px);
+}
+
+.imagem:nth-child(9){
+
+    background-image: url(https://mitologiagrega.net.br/wp-content/uploads/2016/10/mitologia-grega-ninfa-naiades.jpg);
+    transform: rotateY(320deg) translateZ(430px);
+}
+
+footer{
+    display: block;
+    position: fixed;
+    width: 100%;
+    bottom:0vh;
+    left:0;
+    background-color: #889cf3;
+    text-align: center;
+    padding: 0px;
+    color: black;
+    font-weight: bold;
+
+    /* rodapé simples e bem visivel*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
